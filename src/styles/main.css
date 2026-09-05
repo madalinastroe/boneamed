@@ -5062,3 +5062,25 @@ input {
     bottom: -30px;
   }
 }
+
+/* Center primary actions on compact screens without changing desktop placement. */
+@media (max-width: 760px) {
+  .button:not(.button-full):not(.mobile-booking) {
+    display: flex;
+    width: max-content;
+    margin-inline: auto;
+  }
+
+  .profile-content .button,
+  .soft-section .doctor-content .button {
+    align-self: center;
+  }
+
+  .medical-profile-action .button {
+    width: 100%;
+  }
+
+  .pa-contact .button {
+    justify-self: center;
+  }
+}
