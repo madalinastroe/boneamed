@@ -5,7 +5,6 @@ import { RouterLink, RouterView, useRoute } from 'vue-router'
 const menuOpen = ref(false)
 const route = useRoute()
 const isAppointmentAccess = computed(() => route.path === '/my-appointment')
-const showMobileBooking = computed(() => !isAppointmentAccess.value && route.path !== '/team')
 let revealObserver: IntersectionObserver | undefined
 
 function setUpPageReveals() {
@@ -91,7 +90,5 @@ onBeforeUnmount(() => revealObserver?.disconnect())
       <div><span>Navigare</span><RouterLink to="/team">Echipa medicală</RouterLink><RouterLink to="/services">Servicii</RouterLink></div>
       <small class="footer-copyright">© 2026 Bonea Med. Toate drepturile rezervate.</small>
     </footer>
-
-    <RouterLink v-if="showMobileBooking" class="button button-primary mobile-booking" to="/booking">Programează-te</RouterLink>
   </div>
 </template>

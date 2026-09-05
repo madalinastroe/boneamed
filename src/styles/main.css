@@ -396,9 +396,6 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 0.12em;
 }
-.mobile-booking {
-  display: none;
-}
 .page {
   min-height: 70vh;
 }
@@ -816,15 +813,6 @@ input:focus {
   }
   .site-footer {
     grid-template-columns: 1fr 1fr;
-    padding-bottom: 110px;
-  }
-  .mobile-booking {
-    display: flex;
-    position: fixed;
-    z-index: 30;
-    bottom: 14px;
-    left: 20px;
-    right: 20px;
   }
   .section-heading {
     align-items: start;
@@ -5065,7 +5053,7 @@ input {
 
 /* Center primary actions on compact screens without changing desktop placement. */
 @media (max-width: 760px) {
-  .button:not(.button-full):not(.mobile-booking) {
+  .button:not(.button-full) {
     display: flex;
     width: max-content;
     margin-inline: auto;
