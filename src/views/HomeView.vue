@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import HomeAlveora from './home/HomeAlveora.vue'
+import HomePage from './home/HomePage.vue'
 </script>
 
 <template>
-  <HomeAlveora />
+  <HomePage />
 </template>

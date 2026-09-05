@@ -43,58 +43,58 @@ onBeforeUnmount(() => observer?.disconnect())
 </script>
 
 <template>
-  <main ref="page" class="alveora-home">
-    <section class="alveora-hero" data-reveal="image">
-      <img class="alveora-hero-ultrasound" src="/images/ecograf-hero.webp" alt="Investigație ecografică la Bonea Med" />
-      <div class="alveora-hero-shade"></div>
-      <div class="alveora-hero-copy">
+  <main ref="page" class="home-page">
+    <section class="home-hero" data-reveal="image">
+      <img class="home-hero-ultrasound" src="/images/ecograf-hero.webp" alt="Investigație ecografică la Bonea Med" />
+      <div class="home-hero-shade"></div>
+      <div class="home-hero-copy">
         <h1>Grijă pentru sănătatea femeii, în fiecare etapă a vieții</h1>
         <p>Obstetrică și ginecologie în Baia Mare, cu experiență medicală de peste 20 de ani.</p>
         <RouterLink class="button button-primary" to="/booking">Programează-te</RouterLink>
       </div>
     </section>
 
-    <section class="alveora-intro" data-reveal>
+    <section class="home-intro" data-reveal>
       <h2>Un cabinet construit din pasiune, vocație și respect pentru fiecare pacientă</h2>
-      <p class="alveora-intro-copy">Profesionalismul, comunicarea deschisă și tehnologia modernă ne ajută să oferim evaluări atente și soluții adaptate fiecărei paciente.</p>
-      <div class="alveora-values">
+      <p class="home-intro-copy">Profesionalismul, comunicarea deschisă și tehnologia modernă ne ajută să oferim evaluări atente și soluții adaptate fiecărei paciente.</p>
+      <div class="home-values">
         <span data-reveal style="--reveal-delay: 60ms"><b>20+ ani</b>Experiență medicală</span>
         <span data-reveal style="--reveal-delay: 120ms"><b>2 medici primari</b>Îngrijire coordonată</span>
         <span data-reveal style="--reveal-delay: 180ms"><b>Tehnologie modernă</b>Investigații precise</span>
       </div>
     </section>
 
-    <section class="alveora-services">
+    <section class="home-services">
       <header data-reveal>
         <div><h2>Îngrijire pentru fiecare etapă</h2></div>
       </header>
-      <div class="alveora-service-grid" data-reveal>
+      <div class="home-service-grid" data-reveal>
         <article v-for="(service, index) in featuredServices" :key="service.number" data-reveal :style="{ '--reveal-delay': `${index * 70}ms` }">
-          <div class="alveora-service-image"><img :src="service.image" :alt="service.title" loading="lazy" /></div>
-          <div class="alveora-service-content">
+          <div class="home-service-image"><img :src="service.image" :alt="service.title" loading="lazy" /></div>
+          <div class="home-service-content">
             <h3>{{ service.title }}</h3>
             <p>{{ service.text }}</p>
           </div>
         </article>
       </div>
-      <RouterLink class="alveora-section-link" to="/services">Vezi toate serviciile <span>→</span></RouterLink>
+      <RouterLink class="home-section-link" to="/services">Vezi toate serviciile <span>→</span></RouterLink>
     </section>
 
-    <section class="alveora-team">
-      <div class="alveora-team-copy" data-reveal>
+    <section class="home-team">
+      <div class="home-team-copy" data-reveal>
         <h2>Doi medici. O abordare comună</h2>
         <p>Dr. Diana Bonea și Dr. Adrian Bonea oferă îngrijire medicală completă, bazată pe experiență, explicații clare și respect față de pacientă.</p>
       </div>
-      <div class="alveora-team-portraits">
+      <div class="home-team-portraits">
         <figure v-for="(doctor, index) in doctors" :key="doctor.id" data-reveal="image" :style="{ '--reveal-delay': `${index * 100}ms` }">
           <img :src="doctor.image" :alt="doctor.name" loading="lazy" />
           <figcaption><b>{{ doctor.name }}</b><span>{{ doctor.schedule }}</span></figcaption>
         </figure>
       </div>
-      <RouterLink class="alveora-section-link" to="/team">Descoperă echipa <span>→</span></RouterLink>
+      <RouterLink class="home-section-link" to="/team">Descoperă echipa <span>→</span></RouterLink>
     </section>
 
-    <section class="alveora-equipment">
+    <section class="home-equipment">
       <div data-reveal>
         <h2>Investigații precise. Soluții moderne</h2>
         <p>Cabinetul este dotat pentru diagnostic, monitorizarea sarcinii și tratamente ginecologice moderne.</p>
@@ -104,7 +104,7 @@ onBeforeUnmount(() => observer?.disconnect())
       </dl>
     </section>
 
-    <section class="alveora-cta" data-reveal>
+    <section class="home-cta" data-reveal>
       <div><h2>Programează o consultație</h2><p>Alege medicul, data și ora disponibilă.</p></div>
       <RouterLink class="button button-primary" to="/booking">Vezi disponibilitatea</RouterLink>
     </section>

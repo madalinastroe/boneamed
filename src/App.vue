@@ -33,7 +33,7 @@ function setUpPageReveals() {
     ].join(', ')
 
     const elements = [...main.querySelectorAll<HTMLElement>(selectors)]
-      .filter((element) => !element.closest('.alveora-home'))
+      .filter((element) => !element.closest('.home-page'))
 
     const reveal = (element: Element) => {
       element.classList.add('is-visible')
