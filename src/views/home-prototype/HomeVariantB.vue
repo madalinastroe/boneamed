@@ -27,7 +27,7 @@ const featured = [services[0], services[2], services[7]];
     </section>
     <section class="pb-team">
       <div>
-        <h2>Doi medici primari.<br />Peste 20 de ani de experiență.</h2>
+        <h2>Doi medici primari.<br />Peste 20 de ani de experiență</h2>
         <RouterLink to="/team">Cunoaște echipa →</RouterLink>
       </div>
       <figure v-for="doctor in doctors" :key="doctor.id">

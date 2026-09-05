@@ -3,7 +3,7 @@ import { doctors } from "../data/content";
 </script>
 <template>
   <section class="page section">
-    <h1>Medici dedicați sănătății femeii.</h1>
+    <h1>Echipa medicală</h1>
     <p class="page-lead">
       Experiență clinică, comunicare deschisă și soluții medicale adaptate
       fiecărei paciente.
@@ -13,25 +13,30 @@ import { doctors } from "../data/content";
         <div class="doctor-portrait large">
           <img :src="doctor.image" :alt="doctor.name" />
         </div>
-        <div>
-          <p class="eyebrow">{{ doctor.title }}</p>
+        <div class="profile-content">
           <h2>{{ doctor.name }}</h2>
-          <div class="biography">
-            <p v-for="paragraph in doctor.biography" :key="paragraph">
-              {{ paragraph }}
-            </p>
-          </div>
-          <h3>Competențe și servicii</h3>
-          <ul>
-            <li v-for="item in doctor.specialties" :key="item">{{ item }}</li>
-          </ul>
           <p class="schedule">{{ doctor.schedule }}</p>
+          <p class="profile-summary">{{ doctor.summary }}</p>
           <RouterLink
             class="button button-primary"
             :to="`/booking?doctor=${doctor.id}`"
             >Programează-te</RouterLink
           >
         </div>
+        <details class="profile-details">
+          <summary>Mai multe despre medic</summary>
+          <div class="profile-details-content">
+            <div class="biography">
+              <p v-for="paragraph in doctor.biography" :key="paragraph">
+                {{ paragraph }}
+              </p>
+            </div>
+            <h3>Competențe și servicii</h3>
+            <ul>
+              <li v-for="item in doctor.specialties" :key="item">{{ item }}</li>
+            </ul>
+          </div>
+        </details>
       </article>
     </div>
   </section>

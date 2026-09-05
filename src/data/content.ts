@@ -5,6 +5,7 @@ export type Doctor = {
   schedule: string
   initials: string
   image: string
+  summary: string
   specialties: string[]
   biography: string[]
 }
@@ -19,27 +20,13 @@ export type MedicalService = {
 
 export const doctors: Doctor[] = [
   {
-    id: 'diana',
-    name: 'Dr. Diana Bonea',
-    title: 'Medic primar obstetrică-ginecologie',
-    schedule: 'Marți și joi · 15:00–18:00',
-    initials: 'DB',
-    image: '/images/diana_bonea.jpg',
-    specialties: ['Monitorizarea sarcinii', 'Colposcopie', 'Fertilitate', 'Managementul menopauzei'],
-    biography: [
-      'Doamna doctor oferă servicii medicale dedicate sănătății femeii, acoperind atât îngrijirea și monitorizarea sarcinii, cât și diagnosticarea și tratarea afecțiunilor ginecologice. În practica sa, ecografia obstetricală și ginecologică reprezintă un instrument esențial pentru evaluări corecte și urmărirea atentă a evoluției pacientelor.',
-      'Activitatea sa include prevenția și tratamentul patologiei colului uterin, susținute de competența în colposcopie, metodă esențială pentru depistarea precoce a modificărilor cervicale.',
-      'De asemenea, realizează investigații și tratamente pentru sterilitate, sprijinind pacientele în parcursul către obținerea unei sarcini. Abordează managementul menopauzei, inclusiv tratament de substituție hormonală personalizat, adaptat nevoilor fiecărei paciente.',
-      'Activitatea medicală este completată de consilierea pentru planificare familială și de tratamente moderne pentru patologia genito-urinară, menite să îmbunătățească sănătatea intimă, confortul și calitatea vieții.',
-    ],
-  },
-  {
     id: 'adrian',
     name: 'Dr. Adrian Bonea',
     title: 'Medic primar obstetrică-ginecologie',
     schedule: 'Luni și miercuri · 15:00–18:00',
     initials: 'AB',
     image: '/images/adrian_bonea.jpg',
+    summary: 'Îngrijire completă în obstetrică și ginecologie, cu experiență în diagnostic, monitorizarea sarcinii și chirurgie ginecologică.',
     specialties: ['Ecografie obstetricală și ginecologică', 'Laparoscopie', 'Histeroscopie', 'Chirurgie ginecologică'],
     biography: [
       'Domnul doctor oferă îngrijire medicală completă în obstetrică și ginecologie, cu accent pe diagnosticarea și tratamentul medical și chirurgical al afecțiunilor ginecologice, precum și pe supravegherea și monitorizarea sarcinii și asistența la naștere.',
@@ -47,6 +34,22 @@ export const doctors: Doctor[] = [
       'Practica sa medicală se concentrează și asupra chirurgiei ginecologice, atât clasice, cât și minim invazive, având competențe în laparoscopie și histeroscopie. Aceste tehnici moderne permit intervenții eficiente, cu recuperare rapidă și siguranță crescută pentru paciente.',
       'În relația cu pacientele, acordă o atenție deosebită comunicării medicale, ascultând cu răbdare și oferind explicații clare și complete, astfel încât fiecare pacientă să fie corect informată și încrezătoare în deciziile medicale.',
       'Abordarea sa îmbină experiența clinică, tehnologia modernă și respectul față de pacientă, având ca prioritate sănătatea și confortul acesteia.',
+    ],
+  },
+  {
+    id: 'diana',
+    name: 'Dr. Diana Bonea',
+    title: 'Medic primar obstetrică-ginecologie',
+    schedule: 'Marți și joi · 15:00–18:00',
+    initials: 'DB',
+    image: '/images/diana_bonea.jpg',
+    summary: 'Îngrijire ginecologică și monitorizarea sarcinii, cu accent pe diagnostic precis, prevenție și confort.',
+    specialties: ['Monitorizarea sarcinii', 'Colposcopie', 'Fertilitate', 'Managementul menopauzei'],
+    biography: [
+      'Doamna doctor oferă servicii medicale dedicate sănătății femeii, acoperind atât îngrijirea și monitorizarea sarcinii, cât și diagnosticarea și tratarea afecțiunilor ginecologice. În practica sa, ecografia obstetricală și ginecologică reprezintă un instrument esențial pentru evaluări corecte și urmărirea atentă a evoluției pacientelor.',
+      'Activitatea sa include prevenția și tratamentul patologiei colului uterin, susținute de competența în colposcopie, metodă esențială pentru depistarea precoce a modificărilor cervicale.',
+      'De asemenea, realizează investigații și tratamente pentru sterilitate, sprijinind pacientele în parcursul către obținerea unei sarcini. Abordează managementul menopauzei, inclusiv tratament de substituție hormonală personalizat, adaptat nevoilor fiecărei paciente.',
+      'Activitatea medicală este completată de consilierea pentru planificare familială și de tratamente moderne pentru patologia genito-urinară, menite să îmbunătățească sănătatea intimă, confortul și calitatea vieții.',
     ],
   },
 ]

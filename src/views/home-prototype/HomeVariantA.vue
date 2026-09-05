@@ -3,7 +3,7 @@
   <div class="proto proto-a">
     <section class="pa-hero">
       <div>
-        <h1>Grijă medicală, cu respect pentru fiecare pacientă.</h1>
+        <h1>Grijă medicală, cu respect pentru fiecare pacientă</h1>
         <p>Cabinet de obstetrică-ginecologie în Baia Mare, fondat în 2013.</p>
         <RouterLink class="button button-primary" to="/booking">Programează-te</RouterLink>
       </div>

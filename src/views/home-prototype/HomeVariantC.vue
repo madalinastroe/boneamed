@@ -5,7 +5,7 @@ import { doctors, services } from "../../data/content";
   <div class="proto proto-c">
     <section class="pc-hero">
       <div class="pc-copy">
-        <h1>Consultații de obstetrică și ginecologie în Baia Mare.</h1>
+        <h1>Consultații de obstetrică și ginecologie în Baia Mare</h1>
         <p>Experiență medicală, explicații clare și tehnologie modernă.</p>
       </div>
       <aside>

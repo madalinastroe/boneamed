@@ -1,5 +1,11 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
 import { services } from '../data/content'
+
+const route = useRoute()
+const isFullBleedCards = computed(() => route.query.card !== 'inset' && route.query.card !== 'editorial')
+const isEditorialCards = computed(() => route.query.card === 'editorial')
 </script>
 
 <template>
@@ -10,12 +16,12 @@ import { services } from '../data/content'
     </header>
 
     <div class="service-list">
-      <article v-for="service in services" :key="service.number" class="service-detail">
+      <article v-for="service in services" :key="service.number" :class="['service-detail', { 'service-detail--full-bleed': isFullBleedCards, 'service-detail--editorial': isEditorialCards }]">
         <div class="service-detail-image">
           <img :src="service.image" :alt="service.title" loading="lazy" />
-          <h2>{{ service.title }}</h2>
         </div>
         <div class="service-detail-content">
+          <h2>{{ service.title }}</h2>
           <p>{{ service.text }}</p>
           <ul v-if="service.details">
             <li v-for="detail in service.details" :key="detail">{{ detail }}</li>

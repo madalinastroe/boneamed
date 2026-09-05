@@ -1,6 +1,9 @@
 <template>
-  <section class="page section">
-    <h1>Suntem aproape de tine.</h1>
+  <section class="page section contact-page">
+    <header class="contact-page-intro">
+      <h1>Suntem aproape de tine</h1>
+      <p>Ne poți contacta pentru informații, programări sau pentru a găsi mai ușor cabinetul.</p>
+    </header>
     <div class="contact-grid">
       <div class="contact-card">
         <span>Adresă</span>

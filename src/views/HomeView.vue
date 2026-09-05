@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import HomeVariantA from './home-prototype/HomeVariantA.vue'
+import HomeAlveora from './home/HomeAlveora.vue'
 </script>
 
 <template>
-  <HomeVariantA />
+  <HomeAlveora />
 </template>
