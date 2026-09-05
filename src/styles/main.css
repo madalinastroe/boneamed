@@ -299,9 +299,9 @@ input{border-radius:10px}
 /* Alternate service-card layout: full-bleed image header. */
 .services-page .service-detail--full-bleed{padding:0;overflow:hidden}
 .services-page .service-detail--full-bleed .service-detail-image{border-radius:0;height:auto;aspect-ratio:16/9}
-.services-page .service-detail--full-bleed .service-detail-content{padding:25px 24px 20px}
+.services-page .service-detail--full-bleed .service-detail-content{padding:2px 24px 20px}
 .services-page .service-detail--full-bleed .service-detail-image:after{border-radius:0}
-@media(max-width:760px){.services-page .service-detail--full-bleed .service-detail-content{padding:20px 18px 16px}}
+@media(max-width:760px){.services-page .service-detail--full-bleed .service-detail-content{padding:4px 18px 16px}}
 
 /* Alternate editorial layout: dark service story, image and cream details panel. */
 .services-page .service-list:has(.service-detail--editorial){grid-template-columns:1fr;gap:30px}
